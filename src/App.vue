@@ -1,11 +1,19 @@
-<script setup></script>
+<script setup>
+  import LoginForm from '@/components/LoginForm.vue'
+  import Ghost from '@/components/Ghost.vue'
+  import IceCreamStore from '@/components/IceCreamStore.vue'
+  import Temperature from '@/components/Temperature.vue'
+  import Basket from '@/components/Basket.vue'
+</script>
 
 <template>
-  <h1>You did it! MMI </h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <LoginForm/>
+  <Ghost/>
+  <IceCreamStore/>
+  <Temperature/>
+  <Basket/>
 </template>
 
-<style scoped></style>
+<style>
+  @import './assets/base.css';
+</style>
