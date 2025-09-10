@@ -1,17 +1,14 @@
 <script setup>
   import LoginForm from '@/components/LoginForm.vue'
-  import Ghost from '@/components/Ghost.vue'
-  import IceCreamStore from '@/components/IceCreamStore.vue'
-  import Temperature from '@/components/Temperature.vue'
-  import Basket from '@/components/Basket.vue'
+  import SearchFilm from '@/components/SearchFilm.vue'
+  import { ref } from 'vue'
+
+  const loggedIn = ref(true)
 </script>
 
 <template>
-  <LoginForm/>
-  <Ghost/>
-  <IceCreamStore/>
-  <Temperature/>
-  <Basket/>
+  <LoginForm v-if="loggedIn === false"/>
+  <SearchFilm v-else/>
 </template>
 
 <style>
